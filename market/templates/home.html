@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Welcome to Gadget Market
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-5 text-center bg-dark text-white">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+            <h1 class="display-3 font-weight-bold mb-4">Gadget Market</h1>
+            <p class="lead mb-4">Your one-stop shop to buy and sell amazing tech items. Start trading today!</p>
+            <a class="btn btn-lg btn-outline-light px-5" href="{{ url_for('market_page') }}">Enter Market</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
